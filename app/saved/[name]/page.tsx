@@ -5,3 +5,4 @@ const saved = () => {
 };
 
 export default saved;
+export const runtime = "edge";

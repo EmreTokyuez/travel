@@ -5,3 +5,4 @@ const Tour = () => {
 };
 
 export default Tour;
+export const runtime = "edge";
