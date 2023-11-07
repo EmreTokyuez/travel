@@ -1,5 +1,5 @@
 import React from "react";
-import TravelList from "../../components/Travellist/Travellist";
+import TravelList from "../components/Travellist/Travellist";
 const all_travels = () => {
   return (
     <div>

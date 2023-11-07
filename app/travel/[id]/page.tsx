@@ -1,8 +1,8 @@
 import React from "react";
 
-const Tour = () => {
+const Travel = () => {
   return <div>Tour</div>;
 };
 
-export default Tour;
+export default Travel;
 export const runtime = "edge";
