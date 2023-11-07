@@ -1,6 +1,5 @@
-import React from "react";
 import styles from "./page.module.css";
-
+import React from "react";
 const TravelDestinations = () => {
   const travels = [
     { title: "Travel 1", destinations: ["Destination 1", "Destination 2"] },
@@ -12,21 +11,20 @@ const TravelDestinations = () => {
     <div>
       {travels.map((travel, index) => (
         <div key={index}>
-          <h2>{travel.title}</h2>
-          {travel.destinations.map((destination, i) => (
-            <div
-              key={i}
-              className="destination"
-              style={{
-                border: "1px solid black",
-                padding: "10px",
-                cursor: "pointer",
-              }}
-            >
-              {destination}
-              {i < travel.destinations.length - 1 && <span> → </span>}
+          <div className="collapse bg-base-200">
+            <input type="checkbox" />
+            <div className="collapse-title text-xl font-medium text-center ">
+              {travel.title}
             </div>
-          ))}
+
+            <div className="collapse-content">
+              {travel.destinations.map((destination, i) => (
+                <div key={i} className="p-5 text-center">
+                  <p>{destination}</p>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       ))}
     </div>
