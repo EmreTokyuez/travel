@@ -45,6 +45,7 @@ Sending of verification email works, the link in the email leads to localhost in
 ![SignUp2](https://github.com/EmreTokyuez/travel/blob/main/images/email.png)
   
 - Error if login info is wrong:
+  
 ![False Credentials](https://github.com/EmreTokyuez/travel/blob/main/images/invalid.png)
 
 - User can reset password:
