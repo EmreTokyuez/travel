@@ -1,14 +1,20 @@
 "use client";
 import styles from "./page.module.css";
+import { useRouter } from "next/navigation";
 import { Auth } from "@supabase/auth-ui-react";
 import { ThemeSupa } from "@supabase/auth-ui-shared";
 import { createClient } from "@supabase/supabase-js";
 require("dotenv").config();
-const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
-);
+
 export default function Home() {
+  const supabase = createClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+  );
+  const router = useRouter();
+  const handleClick = () => {
+    router.push("/all_travels");
+  };
   return (
     <div className="text-blue-500">
       <div
@@ -26,7 +32,9 @@ export default function Home() {
               Find travel routes to follow, customize and share with each other!
               Get inspired today to travel the world!
             </p>
-            <button className="btn btn-primary">Get travelling!</button>
+            <button className="btn btn-primary" onClick={handleClick}>
+              Get travelling!
+            </button>
           </div>
           <Auth
             supabaseClient={supabase}

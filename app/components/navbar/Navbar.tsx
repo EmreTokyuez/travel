@@ -1,7 +1,20 @@
 "use client";
 import React from "react";
+import { useRouter } from "next/navigation";
 
 const Navbar = () => {
+  const router = useRouter();
+  const all_travels = () => {
+    router.push("/all_travels");
+  };
+  const saved_travels = () => {
+    router.push("/saved");
+  };
+
+  const random_travel = () => {
+    router.push("/all_travels");
+  };
+
   return (
     <div className="navbar bg-base-100">
       <div className="navbar-start">
@@ -50,17 +63,17 @@ const Navbar = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <a>Saved Travels</a>
+            <a onClick={saved_travels}>Saved Travels</a>
           </li>
           <li tabIndex={0}>
             <details>
               <summary>Explore</summary>
               <ul className="p-2">
                 <li>
-                  <a>All Travels</a>
+                  <a onClick={all_travels}>All Travels</a>
                 </li>
                 <li>
-                  <a>I&apos;m feeling lucky</a>
+                  <a onClick={random_travel}>I&apos;m feeling lucky</a>
                 </li>
               </ul>
             </details>
