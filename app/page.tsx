@@ -1,8 +1,8 @@
 "use client";
 import styles from "./page.module.css";
-import { createClient } from "@supabase/supabase-js";
 import { Auth } from "@supabase/auth-ui-react";
 import { ThemeSupa } from "@supabase/auth-ui-shared";
+import { createClient } from "@supabase/supabase-js";
 require("dotenv").config();
 
 const supabase = createClient(
@@ -34,7 +34,9 @@ export default function Home() {
             supabaseClient={supabase}
             appearance={{ theme: ThemeSupa }}
             providers={["google"]}
-          />
+
+          />{" "}
+
         </div>
       </div>{" "}
     </div>
