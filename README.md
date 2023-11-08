@@ -18,29 +18,29 @@ When I wanted to plan some holidays, which I rarely do, I noticed a lack of a si
 ### Database
 For the database [Supabase](https://supabase.com) was used as it provides a generous free tier for a PostgreSQL database with built-in authentication, storage and serverless functions. It is also open-source and self-hostable and I want to use products that offer me that flexibility.
 The auth integration also sets up email-verification, email-password-reset and magic-links. One can also set up OAuth with providers such as Google, Github, Facebook and much more.
-![alt text](http://url/to/img.png)
+![Database Schema](https://github.com/EmreTokyuez/travel/blob/main/images/supabase.png)
 ### Frameworks, Tools
 For building the application, the full-stack framework [NextJS](https://nextjs.org/) to provide server-side-rendering and enable efficient caching. For deployments, a connection between my Github Repository and [Cloudflare Pages](https://pages.cloudflare.com/) was created so that when a commit in "main" happens, a new deployment starts with the newest version. Branching was used to reduce the chances of ruining the live version of the application. Merges were checked using [Github Actions](https://docs.github.com/en/actions) and running workflows that were found in the Github Actions marketplace.
 For the frontend, [TailwindCSS](https://tailwindcss.com/) was used in combination with [React](https://react.dev/).
 ### Tests
-Login verification: Email and password gets checked and an error response appears if the credentials don't match.
-Email Verification:
+- **Login verification:** Email and password gets checked and an error response appears if the credentials don't match.
+- **Email Verification:**
 Sending of verification email works, the link in the email leads to localhost in the production instance. 
-Email Password-reset: Email arrives, same issue es before.
+- **Email Password-reset:** Email arrives, same issue es before.
 Google Sign-Up: Doesn't work, redirect URL is wrong (fixed but takes a while to be live).
 ### Result
 Startpage:
-![alt text](http://url/to/img.png)
+![Startpage]([http://url/to/img.png](https://github.com/EmreTokyuez/travel/blob/main/images/startpage.png))
 Users can login (though the website doesn't register that info):
-![alt text](http://url/to/img.png)
+![Login]([http://url/to/img.png](https://github.com/EmreTokyuez/travel/blob/main/images/signin.png))
 Users can register:
-![alt text](http://url/to/img.png)
+![SignUp]([http://url/to/img.png](https://github.com/EmreTokyuez/travel/blob/main/images/signup.png))
 Error if login info is wrong:
-![alt text](http://url/to/img.png)
+![False Credentials](https://github.com/EmreTokyuez/travel/blob/main/images/invalid.png)
 User can reset password:
-![alt text](http://url/to/img.png)
+![Reset]([http://url/to/img.png](https://github.com/EmreTokyuez/travel/blob/main/images/reset.png))
 Layout exists for the travel view:
-![alt text](http://url/to/img.png)
+![Travel View]([http://url/to/img.png](https://github.com/EmreTokyuez/travel/blob/main/images/travels.png))
 
 ### Reflections
 This was an interesting journey where a lot of new tools were introduced into my workflow. These tools seem to offer amazing functionality and could potentially enhance the developer experience but every tool needs a lot of time to master. By introducing so many tools at once and trying to build a functioning, simple application, I was easily overwhelmed and found it hard to find a good tutorial as apparently everything javascript related becomes outdated every 6 months.
