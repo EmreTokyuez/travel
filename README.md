@@ -27,20 +27,23 @@ For the frontend, [TailwindCSS](https://tailwindcss.com/) was used in combinatio
 - **Email Verification:**
 Sending of verification email works, the link in the email leads to localhost in the production instance. 
 - **Email Password-reset:** Email arrives, same issue es before.
-Google Sign-Up: Doesn't work, redirect URL is wrong (fixed but takes a while to be live).
+- **Google Sign-Up:** Doesn't work, redirect URL is wrong (fixed but takes a while to be live).
+ ![Google](https://github.com/EmreTokyuez/travel/blob/main/images/google.png)
 ### Result
 Startpage:
 ![Startpage]([http://url/to/img.png](https://github.com/EmreTokyuez/travel/blob/main/images/startpage.png))
 Users can login (though the website doesn't register that info):
 ![Login]([http://url/to/img.png](https://github.com/EmreTokyuez/travel/blob/main/images/signin.png))
 Users can register:
-![SignUp]([http://url/to/img.png](https://github.com/EmreTokyuez/travel/blob/main/images/signup.png))
+![SignUp](https://github.com/EmreTokyuez/travel/blob/main/images/signup.png)
+![SignUp2](https://github.com/EmreTokyuez/travel/blob/main/images/email.png)
 Error if login info is wrong:
 ![False Credentials](https://github.com/EmreTokyuez/travel/blob/main/images/invalid.png)
 User can reset password:
-![Reset]([http://url/to/img.png](https://github.com/EmreTokyuez/travel/blob/main/images/reset.png))
+![Reset](https://github.com/EmreTokyuez/travel/blob/main/images/reset.png)
+![Reset](https://github.com/EmreTokyuez/travel/blob/main/images/reset2.png)
 Layout exists for the travel view:
-![Travel View]([http://url/to/img.png](https://github.com/EmreTokyuez/travel/blob/main/images/travels.png))
+![Travel View](https://github.com/EmreTokyuez/travel/blob/main/images/travels.png)
 
 ### Reflections
 This was an interesting journey where a lot of new tools were introduced into my workflow. These tools seem to offer amazing functionality and could potentially enhance the developer experience but every tool needs a lot of time to master. By introducing so many tools at once and trying to build a functioning, simple application, I was easily overwhelmed and found it hard to find a good tutorial as apparently everything javascript related becomes outdated every 6 months.
