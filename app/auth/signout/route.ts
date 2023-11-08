@@ -19,3 +19,4 @@ export async function POST(req: NextRequest) {
     status: 302,
   });
 }
+export const runtime = "edge";

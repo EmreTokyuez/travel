@@ -11,3 +11,4 @@ export default async function Account() {
 
   return;
 }
+export const runtime = "edge";
