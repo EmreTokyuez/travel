@@ -30,19 +30,19 @@ Sending of verification email works, the link in the email leads to localhost in
 - **Google Sign-Up:** Doesn't work, redirect URL is wrong (fixed but takes a while to be live).
  ![Google](https://github.com/EmreTokyuez/travel/blob/main/images/google.png)
 ### Result
-Startpage:
-![Startpage]([http://url/to/img.png](https://github.com/EmreTokyuez/travel/blob/main/images/startpage.png))
-Users can login (though the website doesn't register that info):
-![Login]([http://url/to/img.png](https://github.com/EmreTokyuez/travel/blob/main/images/signin.png))
-Users can register:
+- Startpage:
+![Startpage](https://github.com/EmreTokyuez/travel/blob/main/images/startpage.png)
+- Users can login (though the website doesn't register that info):
+![Login](https://github.com/EmreTokyuez/travel/blob/main/images/signin.png)
+- Users can register:
 ![SignUp](https://github.com/EmreTokyuez/travel/blob/main/images/signup.png)
-![SignUp2](https://github.com/EmreTokyuez/travel/blob/main/images/email.png)
-Error if login info is wrong:
+- ![SignUp2](https://github.com/EmreTokyuez/travel/blob/main/images/email.png)
+- Error if login info is wrong:
 ![False Credentials](https://github.com/EmreTokyuez/travel/blob/main/images/invalid.png)
-User can reset password:
+- User can reset password:
 ![Reset](https://github.com/EmreTokyuez/travel/blob/main/images/reset.png)
 ![Reset](https://github.com/EmreTokyuez/travel/blob/main/images/reset2.png)
-Layout exists for the travel view:
+- Layout exists for the travel view:
 ![Travel View](https://github.com/EmreTokyuez/travel/blob/main/images/travels.png)
 
 ### Reflections
