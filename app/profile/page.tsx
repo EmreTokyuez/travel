@@ -1,7 +1,14 @@
-import React from "react";
+import { createServerComponentClient } from "@supabase/auth-helpers-nextjs";
+import { cookies } from "next/headers";
+import { Database } from "../../database.types";
+import AccountForm from "./account-form";
 
-const Profile = () => {
-  return <div>Profile</div>;
-};
+export default async function Account() {
+  const supabase = createServerComponentClient<Database>({ cookies });
 
-export default Profile;
+  const {
+    data: { session },
+  } = await supabase.auth.getSession();
+
+  return <AccountForm session={session} />;
+}

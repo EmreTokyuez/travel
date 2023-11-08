@@ -1,34 +1,25 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) hosted on Cloudflare Pages [here](https://travelapp.emrebox.work).
 
-## Getting Started
+## Getting Started locally
 
 First, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
-
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Showcase
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Idea
+The idea for this project came after I got a bike and wanted to some tours with nice views. I had discovered the service [komoot](https://komoot.com) where users have uploaded routes with attached pictures and statistics. I really liked the idea of using routes that other users have taken, reviewed and maybe even warned about dangerous spots. 
+When I wanted to plan some holidays, which I rarely do, I noticed a lack of a similar service for travels. Travel routes with different cities or countries to visit and things to see. No long research needed, just find a good tour or combine several of them to fit your needs and budget and just worry about finding local hotels in the cities.
 
-## Learn More
+### Database
+For the database [Supabase](https://supabase.com) was used as it provides a generous free tier for a PostgreSQL database with built-in authentication, storage and serverless functions. It is also open-source and self-hostable and I want to use products that offer me that flexibility.
+The auth integration also sets up email-verification, email-password-reset and magic-links. One can also set up OAuth with providers such as Google, Github, Facebook and much more.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Frameworks, Tools
+### Tests
+### Result
+### Reflections
